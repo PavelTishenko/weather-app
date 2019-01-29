@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import Title from './components/title'
 import Inputs from './components/inputs'
 import InfoForm from './components/infoform'
-import './App.css';
+import './app.css';
 
 const API_KEY = '7b79d1ddfb686b4b32f3eeea83609067';
 
@@ -24,7 +24,7 @@ export default class App extends Component {
     const country = e.target.elements.country.value
     const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
     const useData = await data.json();
-    console.log(useData);
+    
     
     if(city && country) {
       this.setState({
@@ -50,7 +50,7 @@ export default class App extends Component {
 
   render() {
     return (
-    <div>
+    <div className = 'try'>
       <Title/>
       <Inputs getWeather = {this.getData}/>
       <InfoForm 

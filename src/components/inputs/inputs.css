@@ -1,0 +1,12 @@
+input {
+  width: 20vw;
+  border-radius: 5vw;
+  text-align: center; }
+
+button {
+  border-radius: 5vw;
+  margin-top: 7px;
+  position: relative; }
+
+button:hover {
+  background-color: #666; }

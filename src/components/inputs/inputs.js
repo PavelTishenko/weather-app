@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import './inputs.css'
 export default class Inputs extends Component{
   render(){
     const {getWeather} = this.props;

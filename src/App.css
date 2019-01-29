@@ -1,0 +1,13 @@
+body {
+  font-size: 22px; }
+
+.try {
+  font: 100% Helvetica, sans-serif;
+  background-color: #453;
+  border: 1px #000 solid;
+  width: 41%;
+  position: absolute;
+  left: 320px;
+  top: 130px;
+  text-align: center;
+  border-radius: 5px; }
