@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './infoform.css'
 export default  class InfoForm extends Component {
   
   render(){
@@ -10,10 +10,10 @@ export default  class InfoForm extends Component {
   }
   return (
     <div>
-      <p>Location: {city}, {country}</p>
-      <p>Temperature: {temperature}</p>
-      <p>Humidity: {humidity}</p>
-      <p>Discription: {description}</p>
+      <p><span>Location:</span> {city}, {country}</p>
+      <p><span>Temperature:</span> {temperature}</p>
+      <p><span>Humidity:</span> {humidity}</p>
+      <p><span>Discription:</span> {description}</p>
     </div>
   );
 }
